@@ -1,0 +1,24 @@
+kind = "mobile"
+previewPath = "/mobile/"
+title = "The Plain Dollar Mobile"
+description = "A companion mobile app for The Plain Dollar, letting readers look up plain-English credit card and product reviews and run the annual-fee break-even and grocery-card math calculators on their phones. Uses the same local JSON data as the web app, with adjustable text size for accessibility."
+version = "1.0.0"
+id = "artifacts/plain-dollar-mobile"
+router = "expo-domain"
+
+[[services]]
+name = "expo"
+ensurePreviewReachable = "/status"
+paths = [ "/mobile/" ]
+localPort = 19537
+
+[services.development]
+run = "pnpm --filter @workspace/plain-dollar-mobile run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/plain-dollar-mobile", "run", "build" ]
+run = [ "pnpm", "--filter", "@workspace/plain-dollar-mobile", "run", "serve" ]
+
+[services.env]
+PORT = "19537"
+BASE_PATH = "/mobile/"

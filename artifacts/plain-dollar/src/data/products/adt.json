@@ -1,0 +1,36 @@
+{
+  "slug": "adt",
+  "name": "ADT Home Security",
+  "brand": "ADT",
+  "section": "protect",
+  "category": "home-security",
+  "price": { "headline": "From $28.99 per month", "upfront": "Equipment costs vary; installation by a professional technician", "note": "Requires a 36-month monitoring contract. Early termination fee applies." },
+  "key_facts": [
+    { "label": "Monitoring", "value": "24/7 professional monitoring" },
+    { "label": "Contract", "value": "36 months required" },
+    { "label": "Installation", "value": "Professional (included)" },
+    { "label": "Smart home", "value": "Compatible with Google and Alexa" },
+    { "label": "Response", "value": "Police and fire dispatch available" }
+  ],
+  "pros": [
+    "140 years in business; widely recognized brand",
+    "Professional installation means the system is set up correctly",
+    "Police and fire dispatch from a single monitoring center"
+  ],
+  "cons": [
+    "36-month contract is a significant commitment",
+    "Equipment costs add up before the monthly fee",
+    "Cannot self-monitor without a monitoring plan"
+  ],
+  "best_for": ["homeowners who want professional installation and do not want to manage the system themselves"],
+  "skip_if": "you rent, move frequently, or want a month-to-month option",
+  "rating": 4.0,
+  "rating_reason": "Established brand with professional installation and robust monitoring. The mandatory long-term contract and higher price limit its appeal compared to DIY alternatives.",
+  "buy_url": "https://www.adt.com/",
+  "buy_is_affiliate": false,
+  "phone": "(888) 238-2727",
+  "hands_on": false,
+  "verified_on": "2026-08-15",
+  "verified_by": "research desk, awaiting Jon",
+  "source_url": "https://www.adt.com/"
+}

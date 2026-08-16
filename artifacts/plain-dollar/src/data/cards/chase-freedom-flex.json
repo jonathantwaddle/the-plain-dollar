@@ -1,0 +1,41 @@
+{
+  "slug": "chase-freedom-flex",
+  "name": "Chase Freedom Flex",
+  "short_name": "Freedom Flex",
+  "issuer": "Chase",
+  "network": "Mastercard",
+  "is_amex": false,
+  "annual_fee": 0,
+  "intro_offer": {
+    "headline": "$200 cash back",
+    "spend_requirement": "$500 in purchases in the first 3 months",
+    "expires": null,
+    "our_value_estimate": "$200"
+  },
+  "rewards": [
+    { "rate": "5%", "on": "travel purchased through Chase Travel" },
+    { "rate": "5%", "on": "everyday purchases in rotating quarterly categories, up to $1,500 per quarter when activated" },
+    { "rate": "3%", "on": "dining at restaurants, including takeout and delivery" },
+    { "rate": "3%", "on": "drugstore purchases" },
+    { "rate": "1%", "on": "all other purchases" }
+  ],
+  "regular_apr": "19.99% to 28.74% variable, depending on your credit",
+  "intro_apr": "0% for 15 months on purchases and balance transfers",
+  "foreign_transaction_fee": "3%",
+  "recommended_credit": "Good to excellent (670 to 850, FICO 8)",
+  "rating": 4.2,
+  "rating_reason": "Strong combination of a fixed 3% on dining and rotating 5% categories. Pairs well with a Chase travel card. The quarterly activation requirement and category tracking add friction.",
+  "best_for": ["people who already have a Chase travel card and want a no-fee companion"],
+  "skip_if": "you do not want to track quarterly bonus categories or activate them each quarter",
+  "tags": ["no-annual-fee", "cash-back", "rotating-categories", "dining", "intro-apr"],
+  "apply_url": "https://creditcards.chase.com/cash-back-credit-cards/freedom/flex",
+  "apply_is_affiliate": false,
+  "rates_and_fees_url": null,
+  "verified_on": "2026-08-15",
+  "verified_by": "research desk, awaiting Jon",
+  "source_url": "https://creditcards.chase.com/cash-back-credit-cards/freedom/flex",
+  "offer_history": [
+    { "date": "2026-08-15", "headline": "$200 after $500 in 3 months" }
+  ],
+  "phone": "(800) 432-3117"
+}

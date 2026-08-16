@@ -1,0 +1,35 @@
+{
+  "slug": "mobilehelp",
+  "name": "MobileHelp Classic",
+  "brand": "MobileHelp",
+  "section": "protect",
+  "category": "medical-alert",
+  "price": { "headline": "$19.95 per month", "upfront": null, "note": "No equipment fee for the Classic home system" },
+  "key_facts": [
+    { "label": "Type", "value": "In-home landline and cellular systems" },
+    { "label": "Range", "value": "Up to 1,400 feet from the base (Classic)" },
+    { "label": "Battery backup", "value": "30 hours in power outage" },
+    { "label": "Fall detection", "value": "Available as add-on ($10/month)" },
+    { "label": "Contract", "value": "Month-to-month" }
+  ],
+  "pros": [
+    "No equipment fee on Classic system",
+    "Waterproof help button",
+    "FDA-registered devices"
+  ],
+  "cons": [
+    "Home system uses landline; cellular option costs more",
+    "Mobile unit sold separately"
+  ],
+  "best_for": ["people who spend most time at home", "budget-conscious buyers who want no upfront cost"],
+  "skip_if": "you spend a lot of time away from home; the Classic only works within range of the base",
+  "rating": 4.1,
+  "rating_reason": "The no-equipment-fee Classic is one of the more affordable entry points in medical alerts. Limited to home use unless you add a mobile unit.",
+  "buy_url": "https://www.mobilehelp.com/",
+  "buy_is_affiliate": false,
+  "phone": "(800) 513-2925",
+  "hands_on": false,
+  "verified_on": "2026-08-15",
+  "verified_by": "research desk, awaiting Jon",
+  "source_url": "https://www.mobilehelp.com/"
+}

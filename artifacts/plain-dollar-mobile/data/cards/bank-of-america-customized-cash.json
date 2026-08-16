@@ -1,0 +1,39 @@
+{
+  "slug": "bank-of-america-customized-cash",
+  "name": "Bank of America Customized Cash Rewards Credit Card",
+  "short_name": "Customized Cash Rewards",
+  "issuer": "Bank of America",
+  "network": "Visa",
+  "is_amex": false,
+  "annual_fee": 0,
+  "intro_offer": {
+    "headline": "$200 online cash rewards bonus",
+    "spend_requirement": "$1,000 in purchases in the first 90 days",
+    "expires": null,
+    "our_value_estimate": "$200"
+  },
+  "rewards": [
+    { "rate": "3%", "on": "the category of your choice: gas, online shopping, dining, travel, drug stores, or home improvement (up to $2,500 per quarter in combined choice category and grocery purchases)" },
+    { "rate": "2%", "on": "grocery stores and wholesale clubs (up to $2,500 per quarter combined with the 3% category)" },
+    { "rate": "1%", "on": "all other purchases" }
+  ],
+  "regular_apr": "18.24% to 28.24% variable, depending on your credit",
+  "intro_apr": "0% for 15 months on purchases and balance transfers",
+  "foreign_transaction_fee": "3%",
+  "recommended_credit": "Good to excellent (670 to 850, FICO 8)",
+  "rating": 4.0,
+  "rating_reason": "The flexible 3% category is useful for people with a single dominant spending area. The $2,500 quarterly combined cap means heavier spenders hit the limit and drop to 1% sooner.",
+  "best_for": ["Bank of America customers who qualify for the Preferred Rewards bonus", "people with one clear high-spend category"],
+  "skip_if": "you spend heavily across multiple categories; a card with multiple fixed bonus categories will likely earn more",
+  "tags": ["no-annual-fee", "cash-back", "flexible-categories", "intro-apr"],
+  "apply_url": "https://www.bankofamerica.com/credit-cards/products/cash-back-credit-card/",
+  "apply_is_affiliate": false,
+  "rates_and_fees_url": null,
+  "verified_on": "2026-08-15",
+  "verified_by": "research desk, awaiting Jon",
+  "source_url": "https://www.bankofamerica.com/credit-cards/products/cash-back-credit-card/",
+  "offer_history": [
+    { "date": "2026-08-15", "headline": "$200 after $1,000 in 90 days" }
+  ],
+  "phone": "(800) 732-9194"
+}

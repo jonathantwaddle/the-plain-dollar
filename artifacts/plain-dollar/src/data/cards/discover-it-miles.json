@@ -1,0 +1,37 @@
+{
+  "slug": "discover-it-miles",
+  "name": "Discover it Miles",
+  "short_name": "Discover it Miles",
+  "issuer": "Discover",
+  "network": "Discover",
+  "is_amex": false,
+  "annual_fee": 0,
+  "intro_offer": {
+    "headline": "Discover matches all miles earned in your first year",
+    "spend_requirement": "automatically, at the end of your first year",
+    "expires": null,
+    "our_value_estimate": "varies — effectively 3x miles in year one"
+  },
+  "rewards": [
+    { "rate": "1.5x miles", "on": "every purchase, automatically" }
+  ],
+  "regular_apr": "18.24% to 27.24% variable, depending on your credit",
+  "intro_apr": "0% for 15 months on purchases and balance transfers",
+  "foreign_transaction_fee": "None",
+  "recommended_credit": "Good to excellent (670 to 850, FICO 8)",
+  "rating": 4.0,
+  "rating_reason": "Simple earning structure with a first-year match that doubles your miles. Miles redeem as a statement credit against travel purchases. Lacks transfer partners, which limits value for experienced travelers.",
+  "best_for": ["first travel card for someone who wants simplicity and no foreign transaction fee"],
+  "skip_if": "you are comfortable managing points programs and want to maximize value through airline or hotel transfers",
+  "tags": ["no-annual-fee", "travel", "miles", "no-foreign-fee", "flat-rate", "intro-apr"],
+  "apply_url": "https://www.discover.com/credit-cards/travel/",
+  "apply_is_affiliate": false,
+  "rates_and_fees_url": null,
+  "verified_on": "2026-08-15",
+  "verified_by": "research desk, awaiting Jon",
+  "source_url": "https://www.discover.com/credit-cards/travel/",
+  "offer_history": [
+    { "date": "2026-08-15", "headline": "Miles match at end of first year" }
+  ],
+  "phone": "(800) 347-2683"
+}

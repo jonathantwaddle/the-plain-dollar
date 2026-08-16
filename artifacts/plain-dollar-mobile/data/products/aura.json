@@ -1,0 +1,35 @@
+{
+  "slug": "aura",
+  "name": "Aura Identity Protection",
+  "brand": "Aura",
+  "section": "protect",
+  "category": "identity",
+  "price": { "headline": "From $12 per month (individual)", "upfront": null, "note": "Family plans available from $37/month. Annual billing is cheaper." },
+  "key_facts": [
+    { "label": "Credit monitoring", "value": "All three bureaus (Equifax, Experian, TransUnion)" },
+    { "label": "Identity theft insurance", "value": "Up to $1,000,000 per adult" },
+    { "label": "VPN", "value": "Included on all plans" },
+    { "label": "Password manager", "value": "Included" },
+    { "label": "Response team", "value": "US-based, 24/7" }
+  ],
+  "pros": [
+    "All three credit bureaus monitored",
+    "$1 million insurance per adult on family plans",
+    "VPN and password manager included at no extra cost"
+  ],
+  "cons": [
+    "Higher monthly price than basic credit monitoring",
+    "VPN has data limits on the lower tier"
+  ],
+  "best_for": ["families who want one service covering everyone", "people who have had identity theft before"],
+  "skip_if": "you only want basic credit monitoring; free services from your bank may be enough",
+  "rating": 4.4,
+  "rating_reason": "One of the most complete identity protection services we cover. The $1 million insurance and three-bureau monitoring stand out. The price is higher but justified for families.",
+  "buy_url": "https://www.aura.com/",
+  "buy_is_affiliate": false,
+  "phone": "(855) 712-2872",
+  "hands_on": false,
+  "verified_on": "2026-08-15",
+  "verified_by": "research desk, awaiting Jon",
+  "source_url": "https://www.aura.com/"
+}

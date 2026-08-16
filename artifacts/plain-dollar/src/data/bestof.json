@@ -1,0 +1,41 @@
+[
+  {
+    "slug": "best-cash-back-cards",
+    "title": "Best cash back credit cards",
+    "audience_line": "For people who want simple rewards without tracking points.",
+    "kind": "cards",
+    "has_affiliate_links": true,
+    "intro": "Cash back cards are the most straightforward way to earn rewards on what you already buy. We prefer cards with no annual fee and a flat earning rate, or category cards that offer high rates where you spend the most.",
+    "verified_on": "2026-09-01",
+    "verified_by": "Jon Twaddle",
+    "picks": [
+      {
+        "card": "citi-double-cash",
+        "best_for": "Best for flat-rate simplicity",
+        "why": "It gives you 2% on everything. No categories to remember, no caps to worry about. You get 1% when you buy and 1% when you pay."
+      },
+      {
+        "card": "chase-freedom-unlimited",
+        "best_for": "Best for dining and drugstores",
+        "why": "Earning 3% back at restaurants and drugstores makes this a powerful addition to your wallet without paying a fee."
+      }
+    ]
+  },
+  {
+    "slug": "best-grocery-cards",
+    "title": "Best credit cards for groceries",
+    "audience_line": "For families and home cooks who spend a lot at the supermarket.",
+    "kind": "cards",
+    "has_affiliate_links": true,
+    "intro": "Groceries are a major household expense. The right card can return hundreds of dollars a year. Pay attention to caps and annual fees.",
+    "verified_on": "2026-09-01",
+    "verified_by": "Jon Twaddle",
+    "picks": [
+      {
+        "card": "amex-blue-cash-preferred",
+        "best_for": "Best for large grocery spenders",
+        "why": "The 6% rate on US supermarkets up to $6,000 per year is unmatched. Even with the annual fee, you come out ahead if you spend near the cap."
+      }
+    ]
+  }
+]

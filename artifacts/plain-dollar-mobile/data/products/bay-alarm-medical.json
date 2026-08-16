@@ -1,0 +1,35 @@
+{
+  "slug": "bay-alarm-medical",
+  "name": "Bay Alarm Medical SOS Home System",
+  "brand": "Bay Alarm Medical",
+  "section": "protect",
+  "category": "medical-alert",
+  "price": { "headline": "$19.95 per month", "upfront": null, "note": "365-day cookie through affiliate programs; price locked for life for original subscribers" },
+  "key_facts": [
+    { "label": "Type", "value": "In-home cellular or landline" },
+    { "label": "Range", "value": "1,000 feet from base" },
+    { "label": "Battery backup", "value": "32 hours" },
+    { "label": "Fall detection", "value": "Yes, included with some plans" },
+    { "label": "Contract", "value": "Month-to-month" }
+  ],
+  "pros": [
+    "Price-lock guarantee for original subscribers",
+    "No long-term contract",
+    "US-based monitoring center"
+  ],
+  "cons": [
+    "GPS mobile system is a separate purchase",
+    "App requires a smartphone to use caregiver features"
+  ],
+  "best_for": ["people who want a low monthly rate they can count on", "families coordinating care for a parent"],
+  "skip_if": "your loved one needs on-the-go coverage as the primary use case",
+  "rating": 4.2,
+  "rating_reason": "The price-lock guarantee and US monitoring are strong. Limited app features compared to some competitors.",
+  "buy_url": "https://www.bayalarmmedical.com/",
+  "buy_is_affiliate": false,
+  "phone": "(877) 522-9633",
+  "hands_on": false,
+  "verified_on": "2026-08-15",
+  "verified_by": "research desk, awaiting Jon",
+  "source_url": "https://www.bayalarmmedical.com/"
+}

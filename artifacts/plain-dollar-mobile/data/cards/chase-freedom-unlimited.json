@@ -1,0 +1,39 @@
+{
+  "slug": "chase-freedom-unlimited",
+  "name": "Chase Freedom Unlimited",
+  "short_name": "Freedom Unlimited",
+  "issuer": "Chase",
+  "network": "Visa",
+  "is_amex": false,
+  "annual_fee": 0,
+  "intro_offer": {
+    "headline": "Extra 1.5% cash back",
+    "spend_requirement": "on everything you buy up to $20,000 in the first year",
+    "expires": null,
+    "our_value_estimate": "Up to $300"
+  },
+  "rewards": [
+    { "rate": "5%", "on": "travel purchased through Chase Travel" },
+    { "rate": "3%", "on": "dining and drugstores" },
+    { "rate": "1.5%", "on": "all other purchases" }
+  ],
+  "regular_apr": "20.49% - 29.24% variable",
+  "intro_apr": "0% for 15 months on purchases and balance transfers",
+  "foreign_transaction_fee": "3%",
+  "recommended_credit": "Good to Excellent",
+  "rating": 4.5,
+  "rating_reason": "A strong everyday earner, especially for dining and drugstores, and pairs well with premium Chase cards.",
+  "best_for": ["People who eat out often", "Those planning a large purchase to finance over 15 months"],
+  "skip_if": "You want a flat 2% on everything.",
+  "tags": ["cash-back", "no-annual-fee", "dining"],
+  "apply_url": "https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited",
+  "apply_is_affiliate": true,
+  "rates_and_fees_url": null,
+  "verified_on": "2026-09-01",
+  "verified_by": "Jon Twaddle",
+  "source_url": "https://chase.com",
+  "offer_history": [
+    { "date": "2026-08-01", "headline": "Extra 1.5% cash back" }
+  ],
+  "phone": "800-432-3117"
+}

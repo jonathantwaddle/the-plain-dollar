@@ -1,0 +1,29 @@
+{
+  "slug": "identity-guard",
+  "name": "Identity Guard Ultra",
+  "brand": "Identity Guard",
+  "section": "protect",
+  "category": "identity-theft",
+  "price": {
+    "headline": "$19.99 per month",
+    "upfront": "$239.88 billed annually",
+    "note": "Price locks in for life of subscription"
+  },
+  "key_facts": [
+    { "label": "Credit monitoring", "value": "3 bureaus" },
+    { "label": "Insurance", "value": "$1 million stolen funds" }
+  ],
+  "pros": ["IBM Watson scanning", "Good family plan pricing", "U.S. based support"],
+  "cons": ["Mobile app is clunky", "Does not include antivirus"],
+  "best_for": ["Families", "People who want AI scanning"],
+  "skip_if": "You want an all-in-one suite with antivirus and a VPN included.",
+  "rating": 4.0,
+  "rating_reason": "Solid core identity protection at a fair price, though light on digital security extras.",
+  "buy_url": "https://www.identityguard.com/",
+  "buy_is_affiliate": true,
+  "phone": "855-443-7748",
+  "hands_on": true,
+  "verified_on": "2026-09-01",
+  "verified_by": "Jon Twaddle",
+  "source_url": "https://identityguard.com"
+}

@@ -1,0 +1,1 @@
+- [Grocery calculator math](grocery-calculator-math.md) — never infer reward rates from a card's marketing rate strings; use explicit per-card rules with caps.

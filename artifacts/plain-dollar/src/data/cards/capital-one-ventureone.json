@@ -1,0 +1,38 @@
+{
+  "slug": "capital-one-ventureone",
+  "name": "Capital One VentureOne Rewards Credit Card",
+  "short_name": "VentureOne",
+  "issuer": "Capital One",
+  "network": "Visa",
+  "is_amex": false,
+  "annual_fee": 0,
+  "intro_offer": {
+    "headline": "20,000 bonus miles",
+    "spend_requirement": "$500 in purchases in the first 3 months",
+    "expires": null,
+    "our_value_estimate": "$200 toward travel"
+  },
+  "rewards": [
+    { "rate": "5x miles", "on": "hotels and rental cars booked through Capital One Travel" },
+    { "rate": "1.25x miles", "on": "every other purchase, no categories to track" }
+  ],
+  "regular_apr": "19.99% to 29.99% variable, depending on your credit",
+  "intro_apr": "0% for 15 months on purchases and balance transfers",
+  "foreign_transaction_fee": "None",
+  "recommended_credit": "Good to excellent (670 to 850, FICO 8)",
+  "rating": 3.9,
+  "rating_reason": "No foreign fee and no annual fee make this a decent travel companion card. The 1.25x base rate trails competing no-fee cards like the SavorOne's 3% on dining.",
+  "best_for": ["a backup card for international trips when you want no foreign fee without an annual fee"],
+  "skip_if": "domestic travel is your priority; there are better flat-rate or category cards with no annual fee",
+  "tags": ["no-annual-fee", "travel", "miles", "no-foreign-fee", "intro-apr"],
+  "apply_url": "https://creditcards.capitalone.com/ventureone-credit-card/",
+  "apply_is_affiliate": false,
+  "rates_and_fees_url": null,
+  "verified_on": "2026-08-15",
+  "verified_by": "research desk, awaiting Jon",
+  "source_url": "https://creditcards.capitalone.com/ventureone-credit-card/",
+  "offer_history": [
+    { "date": "2026-08-15", "headline": "20,000 miles after $500 in 3 months" }
+  ],
+  "phone": "(800) 227-4825"
+}

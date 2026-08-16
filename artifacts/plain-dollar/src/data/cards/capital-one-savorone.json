@@ -1,0 +1,40 @@
+{
+  "slug": "capital-one-savorone",
+  "name": "Capital One SavorOne Cash Rewards Credit Card",
+  "short_name": "SavorOne",
+  "issuer": "Capital One",
+  "network": "Mastercard",
+  "is_amex": false,
+  "annual_fee": 0,
+  "intro_offer": {
+    "headline": "$200 cash bonus",
+    "spend_requirement": "$500 in purchases in the first 3 months",
+    "expires": null,
+    "our_value_estimate": "$200"
+  },
+  "rewards": [
+    { "rate": "3%", "on": "dining, entertainment, popular streaming services, and at grocery stores" },
+    { "rate": "5%", "on": "hotels and rental cars booked through Capital One Travel" },
+    { "rate": "8%", "on": "Capital One Entertainment purchases" },
+    { "rate": "1%", "on": "all other purchases" }
+  ],
+  "regular_apr": "19.99% to 29.99% variable, depending on your credit",
+  "intro_apr": "0% for 15 months on purchases and balance transfers",
+  "foreign_transaction_fee": "None",
+  "recommended_credit": "Good to excellent (670 to 850, FICO 8)",
+  "rating": 4.3,
+  "rating_reason": "3% on dining and groceries with no annual fee and no foreign transaction fee is an excellent combination. One of the few no-fee cards that earns well on dining while also working abroad.",
+  "best_for": ["people who spend heavily on dining and entertainment", "international travelers who want a no-fee backup card"],
+  "skip_if": "grocery and dining are not your main spending categories",
+  "tags": ["no-annual-fee", "cash-back", "dining", "entertainment", "no-foreign-fee", "intro-apr"],
+  "apply_url": "https://creditcards.capitalone.com/savorone-credit-card/",
+  "apply_is_affiliate": false,
+  "rates_and_fees_url": null,
+  "verified_on": "2026-08-15",
+  "verified_by": "research desk, awaiting Jon",
+  "source_url": "https://creditcards.capitalone.com/savorone-credit-card/",
+  "offer_history": [
+    { "date": "2026-08-15", "headline": "$200 after $500 in 3 months" }
+  ],
+  "phone": "(800) 227-4825"
+}

@@ -1,0 +1,41 @@
+{
+  "slug": "chase-sapphire-preferred",
+  "name": "Chase Sapphire Preferred Card",
+  "short_name": "Sapphire Preferred",
+  "issuer": "Chase",
+  "network": "Visa",
+  "is_amex": false,
+  "annual_fee": 95,
+  "intro_offer": {
+    "headline": "60,000 bonus points",
+    "spend_requirement": "$4,000 in purchases in the first 3 months",
+    "expires": null,
+    "our_value_estimate": "$750 toward travel through Chase Travel"
+  },
+  "rewards": [
+    { "rate": "5x points", "on": "travel purchased through Chase Travel" },
+    { "rate": "3x points", "on": "dining, select streaming services, and online grocery purchases" },
+    { "rate": "2x points", "on": "all other travel purchases" },
+    { "rate": "1x point", "on": "all other purchases" }
+  ],
+  "regular_apr": "20.99% to 27.99% variable, depending on your credit",
+  "intro_apr": null,
+  "foreign_transaction_fee": "None",
+  "recommended_credit": "Good to excellent (700 to 850, FICO 8)",
+  "rating": 4.6,
+  "rating_reason": "The 60,000-point welcome offer alone covers the $95 annual fee for several years. No foreign transaction fee and solid travel protections make it a strong first travel card.",
+  "best_for": ["first-time travel rewards card", "people who travel a few times a year and eat out regularly"],
+  "skip_if": "you rarely travel or redeem points; the $95 fee is hard to justify without using the travel benefits",
+  "tags": ["travel", "dining", "points", "no-foreign-fee"],
+  "apply_url": "https://creditcards.chase.com/travel-credit-cards/sapphire/preferred",
+  "apply_is_affiliate": false,
+  "rates_and_fees_url": null,
+  "verified_on": "2026-08-15",
+  "verified_by": "research desk, awaiting Jon",
+  "source_url": "https://creditcards.chase.com/travel-credit-cards/sapphire/preferred",
+  "offer_history": [
+    { "date": "2026-08-15", "headline": "60,000 points after $4,000 in 3 months" },
+    { "date": "2025-11-01", "headline": "80,000 points after $4,000 in 3 months" }
+  ],
+  "phone": "(800) 432-3117"
+}

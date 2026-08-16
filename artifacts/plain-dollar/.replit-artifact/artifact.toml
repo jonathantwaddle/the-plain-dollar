@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "The Plain Dollar"
+description = "A US personal-money comparison and guide site. Reviews and compares credit cards and adjacent products (medical alerts, estate planning, identity protection, savings, hearing aids, home security, travel insurance). Built for clarity: 18px body text, plain English, real numbers checked by hand, and a real named editor on every page."
+version = "1.0.0"
+id = "artifacts/plain-dollar"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25308
+
+[services.development]
+run = "pnpm --filter @workspace/plain-dollar run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/plain-dollar", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/plain-dollar/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25308"
+BASE_PATH = "/"

@@ -1,0 +1,35 @@
+{
+  "slug": "trust-and-will",
+  "name": "Trust & Will Online Estate Planning",
+  "brand": "Trust & Will",
+  "section": "plan",
+  "category": "estate-planning",
+  "price": { "headline": "Will: $199. Trust: $499 for individuals, $599 for couples.", "upfront": null, "note": "Annual membership ($19/year) for ongoing updates included" },
+  "key_facts": [
+    { "label": "Documents", "value": "Will, revocable living trust, healthcare directive, financial power of attorney" },
+    { "label": "States", "value": "All 50 states" },
+    { "label": "Attorney review", "value": "Not included; this is a self-service platform" },
+    { "label": "Notarization", "value": "Online notarization available (fee applies)" },
+    { "label": "Updates", "value": "Unlimited with annual membership" }
+  ],
+  "pros": [
+    "Straightforward interview-style process takes about 20 minutes",
+    "State-specific documents reviewed by estate planning attorneys",
+    "Affordable compared to hiring an attorney ($1,000 to $3,000 for a trust)"
+  ],
+  "cons": [
+    "Not a substitute for attorney advice on complex estates",
+    "Annual fee required to update documents after the first year"
+  ],
+  "best_for": ["people with straightforward estates who want documents done quickly", "parents who need a will and guardian designation"],
+  "skip_if": "your estate is complex — business interests, a blended family, or significant assets; hire an estate attorney",
+  "rating": 4.3,
+  "rating_reason": "One of the cleaner online will and trust platforms. The attorney-reviewed state documents add credibility. Not a full substitute for legal advice.",
+  "buy_url": "https://trustandwill.com/",
+  "buy_is_affiliate": false,
+  "phone": null,
+  "hands_on": false,
+  "verified_on": "2026-08-15",
+  "verified_by": "research desk, awaiting Jon",
+  "source_url": "https://trustandwill.com/"
+}

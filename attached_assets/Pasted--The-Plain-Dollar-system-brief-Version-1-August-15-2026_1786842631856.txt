@@ -1,0 +1,216 @@
+# The Plain Dollar: system brief
+
+Version 1, August 15, 2026. Owner: Jon Twaddle. This document describes the whole system: what the site is, how it makes money, how content and data flow, what the pages and data look like, the design and writing rules, the legal guardrails, and the launch plan. It is written so a builder (a person, Replit, or an agent) can build or rebuild the site from it. A working reference build exists in this repo (Astro 7, 52 pages, `npm run build`).
+
+## 1. What it is
+
+A US personal-money comparison and guide site. It reviews and compares credit cards and a set of adjacent products (medical alert systems, online wills and trusts, identity protection, savings accounts, hearing aids, home security, travel insurance), publishes plain-English guides and calculators, and sends one plain-text email a week.
+
+Positioning: **plain English, big type, no clutter, real numbers checked by hand, and a real named person you can call.** It is not a site "for seniors." It is a site built so a 75-year-old with reading glasses can use it without help, which makes it better for everyone. That is the whole differentiator against NerdWallet, The Points Guy, Bankrate, and Upgraded Points, which are dense, ad-heavy, and faceless.
+
+Named face: Jon Twaddle, founder and editor. Jon holds about twenty credit cards himself. Every page carries his byline and a "checked by hand on [date]" line. Nothing publishes without his review.
+
+Brand: **The Plain Dollar**. Domain to confirm (theplaindollar.com preferred).
+
+## 2. How it makes money
+
+Everything is performance-based. No display ads at launch. Ranked by expected contribution:
+
+| Line | How it pays | Realistic numbers | Where the links come from |
+|---|---|---|---|
+| Credit card applications | CPA per approved application | Sub-affiliate networks do not publish rates; practitioner reports put direct issuer rates at roughly $100 to $300 per approval and sub-affiliate rates lower. 2% to 4% of clicks convert to a paid approval. | Apply to CardRatings (QuinStreet) and RV Media Network (Bankrate / CreditCards.com / TPG parent) first; Impact for fintech cards; direct issuer programs (Amex via Rakuten or CJ, Chase, Capital One, Citi) after volume. Personal refer-a-friend links with disclosure as a bridge on Chase (throttled at 10 applications a month), Discover, and Capital One; never on Bilt (banned) and only "friends" on Amex. |
+| Medical alert systems | CPA per sale | $65 to $150 per sale (Medical Alert $150, MobileHelp $100, Medical Care Alert $70, Bay Alarm $65 with a 365-day cookie, Lively from $25 via CJ) | Direct programs and CJ |
+| Online estate planning | Revenue share | Trust & Will 20% (average about $80, up to $180); LegalZoom 15% via CJ | Impact, CJ |
+| Identity protection, antivirus, VPN | CPA and recurring | Aura $65+ per enrollment (60-day cookie); LifeLock $8 to $110; Norton up to $150; NordVPN and Surfshark 40% plus 30% recurring | Impact, CJ |
+| Savings and CDs | CPA per funded account | Raisin $75 to $80; CIT Bank $28 to $100; Discover Bank $40 | FlexOffers, Impact |
+| Home security and warranty | CPA | ADT $125 to $165; Vivint $70 to $220 per qualified lead; American Home Shield $15 to $17 per lead plus 15% | FlexOffers, Awin |
+| Hearing aids (over the counter) | CPA or percent | Jabra Enhance $10 per lead; Eargo $35 or 4%; Lexie, MDHearing, Otofonix 15% | Impact, Awin |
+| Travel insurance | Percent of premium | 12% to 15% of premiums that run $300 to $1,000+ per trip for older travelers | CJ, Awin (needs a state insurance-licensing read first) |
+| The weekly letter | Owned audience | Free at launch. Later: sponsorships, a paid tier, or nothing. Its job is to make the site independent of Google. | Kit (free to 10,000) or Beehiiv |
+| Display ads | Bridge only | Journey by Mediavine at about 10,000 sessions a month if wanted | Later |
+
+Rules that keep the money honest and the accounts open:
+
+- Never sort or rank by what pays. Say so on every list.
+- The one-sentence disclosure at the top of any page with affiliate links and a shorter one beside every Apply or Buy button.
+- Only issuer-supplied offer copy in card boxes. Amex boxes carry "Rates & Fees," "Terms apply," and "Welcome offers vary and you may not be eligible for an offer."
+- No affiliate links inside emails unless a program's terms allow it. The letter links to our own pages.
+- No paid search on issuer brand names. No issuer names in the domain.
+
+Expectation: months 1 to 6 near zero. First meaningful revenue 6 to 12 months out. This is the same curve every successful site in the category rode.
+
+## 3. The machine
+
+The site is static files generated from data. Software does the watching, drafting, checking, and rebuilding. One person does the verifying, editing, and signing.
+
+```
+DATA (json per card / product)  ──►  PAGES (generated: boxes, lists, comparisons, tables)
+        ▲                                        │
+        │ Jon verifies and commits               │ build on every commit
+        │                                        ▼
+MONITOR (daily)                          SITE (static, on Cloudflare Pages)
+  polls affiliate network APIs                   │
+  diffs competitor and community pages           │ subscribe box on every page
+  opens a GitHub issue with the change           ▼
+                                        WEEKLY LETTER (assembled from the week's
+DRAFTS (nightly)                         verified changes and new pages; Jon writes
+  Claude API + style guide ──► PR ──►    the top note and sends)
+  Jon edits and merges (never auto)
+```
+
+Components:
+
+1. **Data layer.** One JSON file per card and per product, validated by a schema at build time (see section 5). Every record has `verified_on`, `verified_by`, and `source_url`. Every change is a git commit, which is the audit trail issuers and networks expect.
+2. **Page generation.** Card boxes, best-of tables, card-vs-card tables, category pages, sitemaps, and structured data are all rendered from the data. Change one number and every page that shows it rebuilds.
+3. **Offer monitor (daily).** Fetches each watched URL (affiliate network creative and terms via API where available; competitor pages such as Doctor of Credit's bonus list; a card subreddit feed), stores a text snapshot, and when the text changes writes a diff and opens a GitHub issue. It never fetches chase.com or americanexpress.com automatically because their terms ban bots; those are checked by hand.
+4. **Drafting job.** A brief (title, audience, must-include facts with sources, target file) plus the style guide go to the Claude API. The result is written to the repo and a pull request opens. A writing linter runs on it. Jon reads, cuts, adds what he knows, merges. Nothing auto-publishes.
+5. **Quality gates in CI.** Writing linter (no em dashes, no banned phrases, no fake attribution, no participial tails, no tricolon reflex), offer checker (no expired offers, no offer older than 45 days unverified, spend requirement present, Amex fields present, https only), site checker (no placeholders and every page signed by Jon before a production build), accessibility scan (axe-core, fails on serious or critical), and the build.
+6. **Weekly letter.** A script assembles the week's verified changes and new pages into a plain-text draft. Jon adds three sentences at the top and sends it Tuesday morning through Kit or Beehiiv. Double opt-in, postal address in the footer, one-click unsubscribe.
+7. **Analytics.** Cloudflare Web Analytics only, cookie-free. No pixels, so no cookie banner and no CCPA exposure.
+
+Software cost at launch: about $15 to $40 a month (domain, Claude API, everything else on free tiers). At 100,000 visits a month: $60 to $150 before paid SEO tools.
+
+## 4. Site structure
+
+Static navigation, no hover menus. Six top links: Credit cards, Protect yourself, Plan ahead, Guides, Tools, The Letter. Footer on every page: phone number with hours, email, mailing address, "Independent. Not owned by a bank, a card company, or an insurance company," and links to About, How we make money, How we rate, Editorial policy, Advertiser disclosure, Glossary, Contact, Privacy.
+
+| Page type | URL | Built from | Human part |
+|---|---|---|---|
+| Home | `/` | Lists and guides, newest first | Hero copy |
+| Card hub | `/cards/` | Lists, reviews, comparisons, guides | Intro |
+| Best-of list (cards) | `/cards/best/{slug}/` | 4 to 8 picks from data; summary table at top; one offer box per pick | Intro, "why it is on this list" per pick |
+| Card review | `/cards/reviews/{card}/` | Offer box from data; "get it if / skip it if" panels; alternatives | The review body, verdict sentence |
+| Card vs card | `/cards/compare/{a}-vs-{b}/` | Side-by-side table from data; both boxes | Verdict and body |
+| Section hub | `/protect/`, `/plan/`, `/save/`, `/health/` | Categories and guides | Intro |
+| Category page | `/{section}/{category}/` (e.g. `/protect/medical-alert/`) | Best-of list for the category if one exists, else all products | Intro, why per pick |
+| Product review | `/{section}/{category}/{product}/` | Product box from data | The review body |
+| Guide | `/guides/{slug}/` | Body, optional FAQ, related cards or products rendered as boxes | Everything |
+| Tools | `/tools/annual-fee-break-even/`, `/tools/grocery-card-math/` | Vanilla JS calculators, keyboard-friendly, results in an aria-live region | Built once |
+| The Letter | `/letter/`, `/letter/{date}/` | Archive of every issue | Top note each week |
+| Glossary | `/glossary/` | One JSON per term | Written once, grows |
+| Trust pages | `/about/`, `/how-we-make-money/`, `/methodology/`, `/editorial-policy/`, `/advertiser-disclosure/`, `/contact/`, `/privacy/` | Hand written | All |
+
+### The card offer box (the unit of the whole site)
+
+Same field order the incumbents use, so issuer compliance teams recognize it, plus two things none of them show:
+
+1. Card name, issuer, network. Our rating out of 5 (one decimal) with a link to the methodology.
+2. Annual fee.
+3. Welcome offer headline **with the spend requirement in plain view** ("$200 cash rewards, after you spend $500 in the first 3 months"), the listing-through date if any, and the Amex strings when the card is Amex.
+4. Rewards, one line per rate, written the way a person reads them ("3% on U.S. supermarkets, up to $6,000 a year, then 1%").
+5. Intro APR if any. Regular APR, with "APR is the yearly interest rate if you carry a balance" beside it.
+6. Foreign transaction fee. Credit needed. Best for. Skip it if.
+7. One button: "Apply on [Issuer]'s site." Rates & Fees link if Amex. "Read our full review." "Prefer to call? [Issuer]: (800) ..." for readers who would rather phone.
+8. A one-line disclosure under the button: affiliate link or not, and that it does not change the rating or the order.
+9. **"Checked by hand on [date] by [name]"** with the source link, and an **offer history** dropdown ("$300 in December 2025; $250 in March 2026; $200 now").
+
+The product box is the same idea: price with the upfront fee shown, five or so key facts, what we like and what we do not, good if / skip if, one button, the disclosure line, the checked-by-hand line, and a plain statement of whether Jon used it himself.
+
+## 5. Data shapes
+
+Card (one JSON per card, `src/data/cards/{slug}.json`):
+
+```json
+{
+  "name": "Wells Fargo Active Cash Card",
+  "short_name": "Active Cash",
+  "issuer": "Wells Fargo",
+  "network": "Visa",
+  "is_amex": false,
+  "annual_fee": 0,
+  "intro_offer": { "headline": "$200 cash rewards", "spend_requirement": "$500 in purchases in the first 3 months", "expires": null, "our_value_estimate": "$200" },
+  "rewards": [ { "rate": "2%", "on": "every purchase, no categories to track and no cap" } ],
+  "regular_apr": "18.49%, 24.49% or 28.49% variable, depending on your credit",
+  "intro_apr": "0% for 12 months from account opening on purchases and qualifying balance transfers",
+  "foreign_transaction_fee": "3%",
+  "recommended_credit": "Good to excellent (670 to 850, FICO 8)",
+  "rating": 4.5,
+  "rating_reason": "Flat 2% with no annual fee is the simplest card we cover. Loses points only for the 3% foreign transaction fee.",
+  "best_for": ["one card for everything, no categories to remember"],
+  "skip_if": "you would use it outside the country; the 3% foreign fee wipes out the 2% back",
+  "tags": ["no-annual-fee", "cash-back", "flat-rate", "intro-apr"],
+  "apply_url": "https://creditcards.wellsfargo.com/active-cash-credit-card/",
+  "apply_is_affiliate": false,
+  "rates_and_fees_url": null,
+  "verified_on": "2026-08-15",
+  "verified_by": "Jon Twaddle",
+  "source_url": "https://creditcards.wellsfargo.com/active-cash-credit-card/",
+  "offer_history": [ { "date": "2026-08-15", "headline": "$200 after $500 in 3 months" } ],
+  "phone": "(800) 642-4720"
+}
+```
+
+Product (`src/data/products/{slug}.json`): `name, brand, section (protect|plan|save|health), category, price {headline, upfront, note}, key_facts [{label, value}], pros[], cons[], best_for[], skip_if, rating, rating_reason, buy_url, buy_is_affiliate, phone, hands_on (true only if Jon used it), verified_on, verified_by, source_url`.
+
+Long-form pages are Markdown with frontmatter: `title, description (under 180 chars), author, published, updated, reviewed_on, reviewed_by, has_affiliate_links, draft`, plus per type: card reviews carry `card, verdict, good_if[], skip_if[], alternatives[]`; best-of lists carry `kind, audience_line, picks[{card|product, best_for, why}]`; comparisons carry `a, b, verdict`; guides carry `section, related_cards[], related_products[], faq[{q,a}]`.
+
+## 6. Design rules (the reason the site exists)
+
+Measured against the incumbents: Bankrate runs 14px body text and 30 Apply buttons on one page; NerdWallet lists the same 12 cards three times; TPG stacks three ad slots and an AI summary above the review; none shows a per-offer verified date or a phone number.
+
+- Light background by default. A high-contrast toggle instead of a dark toggle (dark mode is a worse reading surface for long text at every age).
+- 18px body text minimum. A visible text-size control (three steps to 22px), saved on the reader's device.
+- Body contrast 7:1 or better; never below 4.5:1. No light gray text. Never carry meaning by color alone.
+- Links are blue and underlined; visited links change color. Buttons look like buttons. 48px tap targets with 8px gaps.
+- No popups, interstitials, carousels, sliders, autoplay, sticky bars, or hover-only navigation.
+- One list per page, 5 to 8 items, one call to action per item. Tables scroll inside their own box, never the page.
+- Serif headings, humanist sans body, navy primary, one accent, white or off-white ground. Real photos of real people or none.
+- WCAG 2.1 AA checked in CI. Print stylesheet (people this age print things).
+- Every page: byline, checked-on date, phone and address in the footer.
+
+## 7. Writing rules (short form; the full guide is `STYLE_GUIDE.md`)
+
+Short sentences, one idea per paragraph, about a 7th-grade level. Bad news first, then what to do. Define every term in the sentence where it first appears. Every number has a source and a date. "Is" and "are," not "serves as" or "boasts." Never a first-person experience that did not happen. Never rank by pay.
+
+Banned: em dashes and en dashes as dashes; delve, tapestry, testament, landscape (figurative), robust, pivotal, crucial, meticulous, intricate, vibrant, underscore, showcase, garner, bolster, foster, enhance, elevate, empower, seamless, streamline, leverage, navigate (figurative), unlock, harness, game-changer, "it's worth noting," "in today's fast-paced world," "in conclusion," "not only X but also Y," bold lead-in bullets, Title Case Headings, emoji, exclamation points, participial tails (", highlighting the importance of"), vague attribution ("experts say"), three-item lists by reflex, curly quotes, and card jargon (churning, 5/24, SUB, MSR, FTF, AU, P2) without a definition on the same line.
+
+A linter enforces this on every commit.
+
+## 8. Traffic plan
+
+The environment in August 2026: AI Mode is Google's default; AI Overviews cut clicks to the top result by about 58% where they appear; "best credit cards" is keyword difficulty 94 to 100; only 1.74% of new pages reach the top 10 within a year; small sites lost about 60% of search traffic in 2025 versus 22% for large sites. NerdWallet's card revenue fell 24% two years running. Plan accordingly:
+
+- **Skip for 12 to 24 months:** head terms; rewritten "best cards" listicles; definitional content that AI Overviews already answer; thousands of programmatic permutations; aged domains.
+- **Target from day one:** specific card-vs-card pairs (small sites already surface here); specific application, rule, and redemption questions with a plain answer; calculators (AI Overviews rarely replace them); dated offer-change news for Google Discover and AI citation; the product verticals where the incumbents are SeniorLiving.org and Forbes Health, not NerdWallet.
+- **The owned asset:** the weekly letter. Subscribe box above the fold on every page. Plain text, one link per section, same sender every time.
+- **Brand signals beat backlinks:** branded mentions correlate 0.66 with AI visibility, backlinks 0.22, YouTube mentions strongest of all. So: Jon on YouTube in short plain talking-head answers to the same questions the pages answer; useful non-promotional presence in r/CreditCards and r/personalfinance (no links; both ban them); a public offer-change tracker people cite; press quotes.
+- **Realistic 12-month organic outcome** for a well-run, human-owned site: a few thousand to low tens of thousands of visits a month from long tail. The letter and YouTube carry the rest.
+
+## 9. Legal and compliance
+
+Week one: single-member LLC, EIN, W-9, separate bank account, quarterly estimated taxes, media liability insurance, a mailing address (required in every email under CAN-SPAM), a phone line.
+
+On every page: the FTC-compliant disclosure at the top of any page with affiliate links and next to each button (16 CFR 255.5); a statement of whether compensation affects order or ratings; byline and checked-on date; issuer-supplied offer copy only, no expired offers (CI checks); privacy policy; WCAG 2.1 AA.
+
+Never: SMS (TCPA damages per message); fabricated "we tested" or reader testimonials (FTC 16 CFR Part 465); paid search on issuer brand terms; issuer names in the domain; scheduled scrapers on chase.com or americanexpress.com; Medicare Advantage or Part D lead generation (CMS treats any lead generator as a TPMO with named-entity consent, 10-year call recording, six-figure fines per violation).
+
+Before any insurance line (travel insurance, home warranty): a state-specific read on producer licensing and referral-fee rules.
+
+Card programs' own rules: no email promotion of offers without written consent; creative and copy as supplied; compliance staff review publisher marketing; direct programs carry quotas and can end without cause. Diversify across two networks minimum.
+
+## 10. Launch plan and gates
+
+- **Days 1 to 10:** name and domain; LLC, EIN, W-9, address, phone; repo, hosting, design tokens; trust pages; style guide and linter; data schemas. (Done in the reference build except entity, domain, address, phone, photo.)
+- **Days 10 to 45:** 25 to 30 human-reviewed pages before any application: 8 card reviews, 4 best-of lists, 4 comparisons, 5 guides, 3 medical alert reviews and a list, 2 estate guides, 1 identity comparison, 2 calculators, glossary. Weekly letter starts on day 14 with whoever is on the list. First founder video. (Drafted in the reference build; awaiting Jon's verification pass.)
+- **Days 45 to 60:** apply everywhere at once: CardRatings, RV Media Network, Impact (Aura, Trust & Will, Raisin, Jabra Enhance), CJ (Lively, LegalZoom, Allianz after the licensing read), FlexOffers as fallback. Offer monitor live. Search Console, Bing, Ahrefs Webmaster Tools connected. Five-person usability test with older readers; fix what they hit.
+- **Days 60 to 90:** cadence: nightly draft PRs, Jon's edit pass, 3 to 5 new pages a week, weekly letter, one short video a week, offer-change tracker page.
+- **Month 3 gate:** 40+ signed pages, entity done, at least one card network and two non-card programs approved, list growing. If no approvals: fix the site, do not add pages.
+- **Month 6 gate:** a visible traffic or subscriber trend and first tracked approvals or sales. If flat on both: change the audience or stop. Do not add pages.
+- **Month 12 gate:** revenue covering software, insurance, and a defined hourly floor for Jon's time. If yes, spin the strongest non-card line into its own brand and repeat the machine.
+
+## 11. What already exists (reference build)
+
+Repo: `the-plain-dollar` (Astro 7, static output). 52 pages building clean. 14 cards and 13 products as data; 8 card reviews, 7 best-of lists, 4 comparisons, 11 guides, 2 product reviews, 50 glossary terms, 2 calculators, all trust pages. Scripts: `lint-writing.mjs`, `check-offers.mjs`, `check-site.mjs`, `monitor.mjs`, `draft.mjs`, `letter.mjs`, `axe.mjs`. GitHub workflows for CI, the daily monitor, and drafts. `STYLE_GUIDE.md`, `AGENTS.md`, `README.md`.
+
+Every data record and page is currently marked "research desk, awaiting Jon." The production check refuses to ship until each says "Jon Twaddle." Fields the researchers could not confirm on the issuer's own page are marked "DRAFT: confirm on issuer page" and are the first thing to verify.
+
+If rebuilding elsewhere: keep the data shapes in section 5, the box in section 4, the design rules in section 6, the writing rules in section 7, and the disclosure placement in section 9. Everything else is replaceable.
+
+## 12. Open items
+
+- Domain and trademark check on The Plain Dollar.
+- Jon's photo, two-sentence bio, mailing address, phone line.
+- GitHub and Cloudflare accounts to publish; email provider account (Kit or Beehiiv).
+- Jon's first verification pass over the 14 cards and 13 products (about two hours with the issuer pages open).
+- Which of Jon's own cards get a "I have held this card since" line in their reviews.
+- Network applications on day 45.

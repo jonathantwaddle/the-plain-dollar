@@ -1,0 +1,36 @@
+{
+  "slug": "american-home-shield",
+  "name": "American Home Shield ShieldSilver Plan",
+  "brand": "American Home Shield",
+  "section": "protect",
+  "category": "home-warranty",
+  "price": { "headline": "From $29.99 per month", "upfront": null, "note": "Service call fee of $75, $100, or $125 per visit, chosen at enrollment. Higher service fee = lower monthly premium." },
+  "key_facts": [
+    { "label": "Covered systems", "value": "Heating, electrical, plumbing, and more depending on plan" },
+    { "label": "Covered appliances", "value": "Optional add-on or included in higher-tier plans" },
+    { "label": "Service fee", "value": "$75, $100, or $125 per claim" },
+    { "label": "Contract", "value": "Annual" },
+    { "label": "Coverage limit", "value": "Varies by component; some limits apply" }
+  ],
+  "pros": [
+    "Covers major home systems and appliances in one plan",
+    "Network of pre-screened contractors",
+    "Claims available 24/7 online or by phone"
+  ],
+  "cons": [
+    "Does not cover pre-existing conditions",
+    "Some repairs have dollar caps that may not cover full replacement cost",
+    "Service fee adds to the cost of each claim"
+  ],
+  "best_for": ["homeowners with older systems who want a known monthly cost for unexpected repairs"],
+  "skip_if": "your home is newer and systems are still under manufacturer warranty",
+  "rating": 3.8,
+  "rating_reason": "Wide coverage and established network, but per-claim service fees and coverage caps can reduce the value for smaller repairs. Read the contract carefully before enrolling.",
+  "buy_url": "https://www.ahs.com/",
+  "buy_is_affiliate": false,
+  "phone": "(888) 429-8247",
+  "hands_on": false,
+  "verified_on": "2026-08-15",
+  "verified_by": "research desk, awaiting Jon",
+  "source_url": "https://www.ahs.com/"
+}

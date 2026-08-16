@@ -1,0 +1,39 @@
+{
+  "slug": "capital-one-venture-rewards",
+  "name": "Capital One Venture Rewards Credit Card",
+  "short_name": "Venture Rewards",
+  "issuer": "Capital One",
+  "network": "Visa",
+  "is_amex": false,
+  "annual_fee": 95,
+  "intro_offer": {
+    "headline": "75,000 bonus miles",
+    "spend_requirement": "$4,000 in purchases in the first 3 months",
+    "expires": null,
+    "our_value_estimate": "$750 toward travel"
+  },
+  "rewards": [
+    { "rate": "5x miles", "on": "hotels and rental cars booked through Capital One Travel" },
+    { "rate": "2x miles", "on": "every other purchase, no categories to track" }
+  ],
+  "regular_apr": "19.99% to 29.99% variable, depending on your credit",
+  "intro_apr": null,
+  "foreign_transaction_fee": "None",
+  "recommended_credit": "Good to excellent (670 to 850, FICO 8)",
+  "rating": 4.4,
+  "rating_reason": "2x on everything with no foreign fee is hard to beat at $95 a year. Miles transfer to airline partners, which can unlock outsized value for experienced travelers.",
+  "best_for": ["people who want flexibility to use rewards on any travel, not just one airline"],
+  "skip_if": "you mostly fly one airline and want elite perks; a co-branded card will serve you better",
+  "tags": ["travel", "miles", "no-foreign-fee", "flat-rate"],
+  "apply_url": "https://creditcards.capitalone.com/venture-credit-card/",
+  "apply_is_affiliate": false,
+  "rates_and_fees_url": null,
+  "verified_on": "2026-08-15",
+  "verified_by": "research desk, awaiting Jon",
+  "source_url": "https://creditcards.capitalone.com/venture-credit-card/",
+  "offer_history": [
+    { "date": "2026-08-15", "headline": "75,000 miles after $4,000 in 3 months" },
+    { "date": "2025-09-01", "headline": "60,000 miles after $3,000 in 3 months" }
+  ],
+  "phone": "(800) 227-4825"
+}

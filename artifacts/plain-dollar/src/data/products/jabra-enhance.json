@@ -1,0 +1,36 @@
+{
+  "slug": "jabra-enhance",
+  "name": "Jabra Enhance Plus",
+  "brand": "Jabra",
+  "section": "health",
+  "category": "hearing-aids",
+  "price": { "headline": "$799 per pair", "upfront": "$799", "note": "OTC (over-the-counter) hearing aid; no prescription required" },
+  "key_facts": [
+    { "label": "Type", "value": "Over-the-counter, self-fit" },
+    { "label": "Prescription required", "value": "No" },
+    { "label": "Hearing levels served", "value": "Mild to moderate hearing loss" },
+    { "label": "Battery", "value": "Rechargeable; up to 9 hours per charge" },
+    { "label": "App control", "value": "Yes, iOS and Android" }
+  ],
+  "pros": [
+    "No audiologist visit required",
+    "Sleek design looks like earbuds, not traditional hearing aids",
+    "App allows self-adjustment of settings"
+  ],
+  "cons": [
+    "Only suitable for mild to moderate hearing loss",
+    "Self-fitting may not be as precise as a clinical fitting",
+    "No telecoil for use with hearing loops"
+  ],
+  "best_for": ["people with mild to moderate hearing loss who want a discreet, self-fit option"],
+  "skip_if": "you have severe or profound hearing loss; these devices are not appropriate and an audiologist visit is necessary",
+  "rating": 4.1,
+  "rating_reason": "One of the better-designed OTC options at a mid-range price. The self-fit process is straightforward for most users. Not a replacement for a clinical evaluation if loss is significant.",
+  "buy_url": "https://www.jabra.com/hearing-aids",
+  "buy_is_affiliate": false,
+  "phone": null,
+  "hands_on": false,
+  "verified_on": "2026-08-15",
+  "verified_by": "research desk, awaiting Jon",
+  "source_url": "https://www.jabra.com/hearing-aids"
+}

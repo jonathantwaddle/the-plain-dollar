@@ -1,0 +1,37 @@
+{
+  "slug": "wells-fargo-active-cash",
+  "name": "Wells Fargo Active Cash Card",
+  "short_name": "Active Cash",
+  "issuer": "Wells Fargo",
+  "network": "Visa",
+  "is_amex": false,
+  "annual_fee": 0,
+  "intro_offer": {
+    "headline": "$200 cash rewards",
+    "spend_requirement": "$500 in purchases in the first 3 months",
+    "expires": null,
+    "our_value_estimate": "$200"
+  },
+  "rewards": [
+    { "rate": "2%", "on": "every purchase, no categories to track and no cap" }
+  ],
+  "regular_apr": "19.49%, 24.49% or 29.49% variable, depending on your credit",
+  "intro_apr": "0% for 12 months from account opening on purchases and qualifying balance transfers",
+  "foreign_transaction_fee": "3%",
+  "recommended_credit": "Good to excellent (670 to 850, FICO 8)",
+  "rating": 4.5,
+  "rating_reason": "Flat 2% with no annual fee is the simplest card we cover. Loses points only for the 3% foreign transaction fee.",
+  "best_for": ["one card for everything, no categories to remember"],
+  "skip_if": "you plan to use it outside the US; the 3% foreign fee wipes out the 2% back",
+  "tags": ["no-annual-fee", "cash-back", "flat-rate", "intro-apr"],
+  "apply_url": "https://creditcards.wellsfargo.com/active-cash-credit-card/",
+  "apply_is_affiliate": false,
+  "rates_and_fees_url": null,
+  "verified_on": "2026-08-15",
+  "verified_by": "research desk, awaiting Jon",
+  "source_url": "https://creditcards.wellsfargo.com/active-cash-credit-card/",
+  "offer_history": [
+    { "date": "2026-08-15", "headline": "$200 after $500 in 3 months" }
+  ],
+  "phone": "(800) 642-4720"
+}

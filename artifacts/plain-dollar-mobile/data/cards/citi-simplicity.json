@@ -1,0 +1,32 @@
+{
+  "slug": "citi-simplicity",
+  "name": "Citi Simplicity Card",
+  "short_name": "Citi Simplicity",
+  "issuer": "Citi",
+  "network": "Mastercard",
+  "is_amex": false,
+  "annual_fee": 0,
+  "intro_offer": null,
+  "rewards": [
+    { "rate": "0%", "on": "no rewards program — this card is designed for paying off debt, not earning rewards" }
+  ],
+  "regular_apr": "19.24% to 29.99% variable, depending on your credit",
+  "intro_apr": "0% for 21 months on balance transfers and 12 months on purchases from date of first transfer",
+  "foreign_transaction_fee": "3%",
+  "recommended_credit": "Good to excellent (670 to 850, FICO 8)",
+  "rating": 3.8,
+  "rating_reason": "The 21-month balance transfer window is among the longest we cover. No late fees and no penalty APR make it forgiving. No rewards program means it should be a temporary tool, not your everyday card.",
+  "best_for": ["paying off credit card debt transferred from another card"],
+  "skip_if": "you do not have debt to transfer; there is no rewards value if you use it for new purchases",
+  "tags": ["no-annual-fee", "balance-transfer", "intro-apr", "debt-payoff"],
+  "apply_url": "https://www.citi.com/credit-cards/citi-simplicity-credit-card",
+  "apply_is_affiliate": false,
+  "rates_and_fees_url": null,
+  "verified_on": "2026-08-15",
+  "verified_by": "research desk, awaiting Jon",
+  "source_url": "https://www.citi.com/credit-cards/citi-simplicity-credit-card",
+  "offer_history": [
+    { "date": "2026-08-15", "headline": "0% for 21 months on balance transfers" }
+  ],
+  "phone": "(800) 950-5114"
+}

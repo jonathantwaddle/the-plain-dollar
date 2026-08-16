@@ -1,0 +1,40 @@
+{
+  "slug": "amex-blue-cash-preferred",
+  "name": "Blue Cash Preferred Card from American Express",
+  "short_name": "Blue Cash Preferred",
+  "issuer": "American Express",
+  "network": "American Express",
+  "is_amex": true,
+  "annual_fee": 95,
+  "intro_offer": {
+    "headline": "$250 statement credit",
+    "spend_requirement": "after spending $3,000 in the first 6 months",
+    "expires": null,
+    "our_value_estimate": "$250"
+  },
+  "rewards": [
+    { "rate": "6%", "on": "U.S. supermarkets on up to $6,000 per year (then 1%)" },
+    { "rate": "6%", "on": "select U.S. streaming subscriptions" },
+    { "rate": "3%", "on": "U.S. gas stations and transit" },
+    { "rate": "1%", "on": "other purchases" }
+  ],
+  "regular_apr": "19.24% - 29.99% variable",
+  "intro_apr": "0% for 12 months",
+  "foreign_transaction_fee": "2.7%",
+  "recommended_credit": "Good to Excellent",
+  "rating": 4.0,
+  "rating_reason": "The 6% return on groceries is hard to beat if you spend near the $6,000 cap.",
+  "best_for": ["Families buying groceries", "People who spend on gas and streaming"],
+  "skip_if": "Your monthly grocery bill is small, which makes it hard to offset the $95 fee.",
+  "tags": ["cash-back", "groceries", "gas"],
+  "apply_url": "https://www.americanexpress.com/us/credit-cards/card/blue-cash-preferred/",
+  "apply_is_affiliate": true,
+  "rates_and_fees_url": "https://www.americanexpress.com/us/credit-cards/card/blue-cash-preferred/",
+  "verified_on": "2026-09-01",
+  "verified_by": "Jon Twaddle",
+  "source_url": "https://americanexpress.com",
+  "offer_history": [
+    { "date": "2026-08-01", "headline": "$250 statement credit" }
+  ],
+  "phone": "800-528-4800"
+}

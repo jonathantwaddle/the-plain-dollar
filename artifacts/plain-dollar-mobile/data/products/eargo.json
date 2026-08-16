@@ -1,0 +1,35 @@
+{
+  "slug": "eargo",
+  "name": "Eargo 7",
+  "brand": "Eargo",
+  "section": "health",
+  "category": "hearing-aids",
+  "price": { "headline": "$1,650 per pair", "upfront": "$1,650", "note": "Financing available. OTC (over-the-counter); no prescription required." },
+  "key_facts": [
+    { "label": "Type", "value": "Over-the-counter, self-fit, in-canal" },
+    { "label": "Prescription required", "value": "No" },
+    { "label": "Hearing levels served", "value": "Mild to moderate high-frequency hearing loss" },
+    { "label": "Battery", "value": "Rechargeable; charging case included" },
+    { "label": "App control", "value": "Yes, with sound profile customization" }
+  ],
+  "pros": [
+    "Completely in-canal design is nearly invisible",
+    "Good fit for high-frequency hearing loss, which is the most common type",
+    "Lifetime support from hearing professionals included"
+  ],
+  "cons": [
+    "Higher price than Jabra Enhance",
+    "In-canal fit is not right for all ear canal shapes"
+  ],
+  "best_for": ["people with high-frequency hearing loss who want a nearly invisible aid"],
+  "skip_if": "your hearing loss affects all frequencies or is severe; consult an audiologist",
+  "rating": 4.0,
+  "rating_reason": "The nearly invisible design and professional support are strong. Higher price point than competitors and limited to a specific hearing loss profile.",
+  "buy_url": "https://www.eargo.com/",
+  "buy_is_affiliate": false,
+  "phone": "(800) 903-2130",
+  "hands_on": false,
+  "verified_on": "2026-08-15",
+  "verified_by": "research desk, awaiting Jon",
+  "source_url": "https://www.eargo.com/"
+}

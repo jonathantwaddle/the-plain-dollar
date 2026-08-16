@@ -1,0 +1,43 @@
+{
+  "slug": "chase-sapphire-reserve",
+  "name": "Chase Sapphire Reserve",
+  "short_name": "Sapphire Reserve",
+  "issuer": "Chase",
+  "network": "Visa",
+  "is_amex": false,
+  "annual_fee": 550,
+  "intro_offer": {
+    "headline": "60,000 bonus points",
+    "spend_requirement": "$4,000 in purchases in the first 3 months",
+    "expires": null,
+    "our_value_estimate": "$900 toward travel through Chase Travel"
+  },
+  "rewards": [
+    { "rate": "10x", "on": "hotels and car rentals booked through Chase Travel" },
+    { "rate": "5x", "on": "flights booked through Chase Travel" },
+    { "rate": "3x", "on": "other travel and dining worldwide" },
+    { "rate": "1x", "on": "everything else" }
+  ],
+  "regular_apr": "21.99% to 28.99% variable, depending on your credit",
+  "intro_apr": null,
+  "foreign_transaction_fee": "None",
+  "recommended_credit": "Excellent (740 to 850, FICO 8)",
+  "rating": 4.7,
+  "rating_reason": "The $300 annual travel credit drops the effective cost to $250 a year. At 3x on dining and travel, heavy restaurant and hotel spenders typically clear that hurdle by spring. The Priority Pass lounge access and Global Entry credit add real value if you fly four or more times a year.",
+  "best_for": [
+    "people who spend $500 or more a month on dining and travel combined",
+    "frequent flyers who use airport lounges"
+  ],
+  "skip_if": "you spend less than $500 a month on dining and travel combined; the math will not work in your favor",
+  "tags": ["travel", "dining", "premium", "lounge-access", "no-foreign-fee"],
+  "apply_url": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve",
+  "apply_is_affiliate": false,
+  "rates_and_fees_url": null,
+  "verified_on": "2026-08-15",
+  "verified_by": "research desk, awaiting Jon",
+  "source_url": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve",
+  "offer_history": [
+    { "date": "2026-08-15", "headline": "60,000 points after $4,000 in 3 months" }
+  ],
+  "phone": "(800) 432-3117"
+}

@@ -1,0 +1,42 @@
+{
+  "slug": "capital-one-venture-x",
+  "name": "Capital One Venture X Rewards Credit Card",
+  "short_name": "Venture X",
+  "issuer": "Capital One",
+  "network": "Visa",
+  "is_amex": false,
+  "annual_fee": 395,
+  "intro_offer": {
+    "headline": "75,000 bonus miles",
+    "spend_requirement": "$4,000 in purchases in the first 3 months",
+    "expires": null,
+    "our_value_estimate": "$750 toward travel"
+  },
+  "rewards": [
+    { "rate": "10x", "on": "hotels and rental cars booked through Capital One Travel" },
+    { "rate": "5x", "on": "flights booked through Capital One Travel" },
+    { "rate": "2x", "on": "every other purchase" }
+  ],
+  "regular_apr": "19.99% to 29.99% variable, depending on your credit",
+  "intro_apr": null,
+  "foreign_transaction_fee": "None",
+  "recommended_credit": "Excellent (740 to 850, FICO 8)",
+  "rating": 4.5,
+  "rating_reason": "The $300 annual Capital One Travel credit and 10,000 anniversary miles (worth $100) make the effective cost close to zero for anyone who books any travel in a year. The flat 2x on everything means you never have to think about categories. Good alternative to Sapphire Reserve if you spend more on everyday purchases than on dining.",
+  "best_for": [
+    "people who book at least one trip a year and want a simple 2x on everything else",
+    "heavy travelers who want lounge access without the Amex or Chase ecosystem"
+  ],
+  "skip_if": "you book travel infrequently and would not use the $300 Capital One Travel credit; without it, the math does not work",
+  "tags": ["travel", "flat-rate", "premium", "lounge-access", "no-foreign-fee"],
+  "apply_url": "https://capital.one/venture-x",
+  "apply_is_affiliate": false,
+  "rates_and_fees_url": null,
+  "verified_on": "2026-08-15",
+  "verified_by": "research desk, awaiting Jon",
+  "source_url": "https://capital.one/venture-x",
+  "offer_history": [
+    { "date": "2026-08-15", "headline": "75,000 miles after $4,000 in 3 months" }
+  ],
+  "phone": "(800) 227-4825"
+}

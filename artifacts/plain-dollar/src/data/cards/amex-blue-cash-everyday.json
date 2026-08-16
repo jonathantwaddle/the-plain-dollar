@@ -1,0 +1,40 @@
+{
+  "slug": "amex-blue-cash-everyday",
+  "name": "Blue Cash Everyday Card from American Express",
+  "short_name": "Blue Cash Everyday",
+  "issuer": "American Express",
+  "network": "American Express",
+  "is_amex": true,
+  "annual_fee": 0,
+  "intro_offer": {
+    "headline": "$200 statement credit",
+    "spend_requirement": "$2,000 in purchases in the first 6 months",
+    "expires": null,
+    "our_value_estimate": "$200"
+  },
+  "rewards": [
+    { "rate": "3%", "on": "US supermarkets, up to $6,000 per year in purchases (then 1%)" },
+    { "rate": "3%", "on": "US online retail purchases, up to $6,000 per year (then 1%)" },
+    { "rate": "3%", "on": "US gas stations, up to $6,000 per year (then 1%)" },
+    { "rate": "1%", "on": "all other purchases" }
+  ],
+  "regular_apr": "19.24% to 29.99% variable, depending on your credit",
+  "intro_apr": "0% for 15 months on purchases and balance transfers",
+  "foreign_transaction_fee": "2.7%",
+  "recommended_credit": "Good to excellent (670 to 850, FICO 8)",
+  "rating": 4.1,
+  "rating_reason": "3% at supermarkets with no annual fee is solid. The $6,000 per category cap and no bonus on dining limit its ceiling. A reasonable choice if you want grocery rewards without paying an annual fee.",
+  "best_for": ["grocery shoppers who do not want to pay an annual fee"],
+  "skip_if": "your grocery bill is over $500 a month; the Blue Cash Preferred's 6% will earn more even after the $95 fee",
+  "tags": ["no-annual-fee", "groceries", "cash-back", "gas", "intro-apr"],
+  "apply_url": "https://www.americanexpress.com/us/credit-cards/card/blue-cash-everyday/",
+  "apply_is_affiliate": false,
+  "rates_and_fees_url": "https://www.americanexpress.com/us/credit-cards/card/blue-cash-everyday/",
+  "verified_on": "2026-08-15",
+  "verified_by": "research desk, awaiting Jon",
+  "source_url": "https://www.americanexpress.com/us/credit-cards/card/blue-cash-everyday/",
+  "offer_history": [
+    { "date": "2026-08-15", "headline": "$200 statement credit after $2,000 in 6 months" }
+  ],
+  "phone": "(800) 528-4800"
+}

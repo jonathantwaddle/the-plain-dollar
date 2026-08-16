@@ -1,0 +1,35 @@
+{
+  "slug": "medical-guardian",
+  "name": "Medical Guardian Classic Guardian",
+  "brand": "Medical Guardian",
+  "section": "protect",
+  "category": "medical-alert",
+  "price": { "headline": "Starting at $29.95 per month", "upfront": "$149.95 for the device", "note": "Month-to-month, no long-term contract required" },
+  "key_facts": [
+    { "label": "Type", "value": "In-home and on-the-go systems" },
+    { "label": "Response time", "value": "Typically under 30 seconds" },
+    { "label": "Battery life", "value": "Up to 5 days (mobile unit)" },
+    { "label": "Fall detection", "value": "Available as an add-on ($10/month)" },
+    { "label": "Contract", "value": "Month-to-month or annual" }
+  ],
+  "pros": [
+    "24/7 US-based monitoring center",
+    "GPS tracking on mobile units",
+    "Works outside the home"
+  ],
+  "cons": [
+    "Upfront device cost adds to first-month expense",
+    "Fall detection costs extra"
+  ],
+  "best_for": ["older adults who live alone", "people who want coverage both at home and away"],
+  "skip_if": "you only need coverage inside the home; a less expensive home-only system will do",
+  "rating": 4.3,
+  "rating_reason": "Reliable monitoring, GPS on mobile units, and US-based operators. The upfront device fee is a drawback compared to no-contract competitors.",
+  "buy_url": "https://www.medicalguardian.com/",
+  "buy_is_affiliate": false,
+  "phone": "(800) 313-1191",
+  "hands_on": false,
+  "verified_on": "2026-08-15",
+  "verified_by": "research desk, awaiting Jon",
+  "source_url": "https://www.medicalguardian.com/"
+}

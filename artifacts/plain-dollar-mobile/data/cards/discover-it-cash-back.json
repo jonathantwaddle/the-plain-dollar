@@ -1,0 +1,38 @@
+{
+  "slug": "discover-it-cash-back",
+  "name": "Discover it Cash Back",
+  "short_name": "Discover it",
+  "issuer": "Discover",
+  "network": "Discover",
+  "is_amex": false,
+  "annual_fee": 0,
+  "intro_offer": {
+    "headline": "Discover matches all cash back earned in your first year",
+    "spend_requirement": "automatically, at the end of your first year",
+    "expires": null,
+    "our_value_estimate": "varies by spending"
+  },
+  "rewards": [
+    { "rate": "5%", "on": "everyday purchases at different places each quarter — groceries, restaurants, gas stations, and more — up to $1,500 each quarter when activated" },
+    { "rate": "1%", "on": "all other purchases" }
+  ],
+  "regular_apr": "18.24% to 27.24% variable, depending on your credit",
+  "intro_apr": "0% for 15 months on purchases and balance transfers",
+  "foreign_transaction_fee": "None",
+  "recommended_credit": "Good to excellent (670 to 850, FICO 8)",
+  "rating": 4.2,
+  "rating_reason": "The first-year match is excellent value if you spend in the rotating categories. The 5% cap at $1,500 per quarter limits upside for heavy spenders, and you must activate each quarter.",
+  "best_for": ["first credit card for someone building credit", "people who can stay on top of quarterly activations"],
+  "skip_if": "you do not want to track quarterly categories or activate bonuses each quarter",
+  "tags": ["no-annual-fee", "cash-back", "rotating-categories", "intro-apr", "no-foreign-fee"],
+  "apply_url": "https://www.discover.com/credit-cards/cash-back/",
+  "apply_is_affiliate": false,
+  "rates_and_fees_url": null,
+  "verified_on": "2026-08-15",
+  "verified_by": "research desk, awaiting Jon",
+  "source_url": "https://www.discover.com/credit-cards/cash-back/",
+  "offer_history": [
+    { "date": "2026-08-15", "headline": "Cash back match at end of first year" }
+  ],
+  "phone": "(800) 347-2683"
+}

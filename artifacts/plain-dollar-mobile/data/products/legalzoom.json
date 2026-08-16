@@ -1,0 +1,35 @@
+{
+  "slug": "legalzoom",
+  "name": "LegalZoom Last Will and Testament",
+  "brand": "LegalZoom",
+  "section": "plan",
+  "category": "estate-planning",
+  "price": { "headline": "Will: $89 one-time. Living trust: from $249.", "upfront": null, "note": "Attorney consultations available separately. Business plan ($199/year) includes unlimited attorney consults." },
+  "key_facts": [
+    { "label": "Documents", "value": "Will, living trust, power of attorney, healthcare directive" },
+    { "label": "States", "value": "All 50 states" },
+    { "label": "Attorney review", "value": "Not included in base price; available as add-on" },
+    { "label": "Notarization", "value": "Online notarization available in most states" },
+    { "label": "Updates", "value": "Paid; new documents required for major changes" }
+  ],
+  "pros": [
+    "Lower entry price than Trust & Will for basic wills",
+    "Brand recognition and 20+ years in legal services",
+    "Attorney network available for follow-up questions"
+  ],
+  "cons": [
+    "Attorney access costs extra beyond the base price",
+    "Updating documents requires paying again"
+  ],
+  "best_for": ["people who want a basic will at the lowest price", "those who may want optional attorney access"],
+  "skip_if": "you need a living trust; Trust & Will's trust package is more straightforward for that specific need",
+  "rating": 3.9,
+  "rating_reason": "A lower entry price for basic wills. The update model and extra charges for attorney access add friction over time.",
+  "buy_url": "https://www.legalzoom.com/personal/estate-planning/",
+  "buy_is_affiliate": false,
+  "phone": "(800) 773-0888",
+  "hands_on": false,
+  "verified_on": "2026-08-15",
+  "verified_by": "research desk, awaiting Jon",
+  "source_url": "https://www.legalzoom.com/personal/estate-planning/"
+}

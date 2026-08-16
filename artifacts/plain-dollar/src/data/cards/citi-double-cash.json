@@ -1,0 +1,37 @@
+{
+  "slug": "citi-double-cash",
+  "name": "Citi Double Cash Card",
+  "short_name": "Citi Double Cash",
+  "issuer": "Citi",
+  "network": "Mastercard",
+  "is_amex": false,
+  "annual_fee": 0,
+  "intro_offer": {
+    "headline": "$200 cash back",
+    "spend_requirement": "after spending $1,500 in the first 6 months",
+    "expires": null,
+    "our_value_estimate": "$200"
+  },
+  "rewards": [
+    { "rate": "2%", "on": "all purchases (1% when you buy, 1% when you pay)" }
+  ],
+  "regular_apr": "19.24% - 29.24% variable",
+  "intro_apr": "0% for 18 months on balance transfers",
+  "foreign_transaction_fee": "3%",
+  "recommended_credit": "Good to Excellent",
+  "rating": 4.5,
+  "rating_reason": "It offers a flat 2% cash back on everything without rotating categories, making it a reliable everyday card.",
+  "best_for": ["People who want one card for everything", "Paying off a balance transfer over 18 months"],
+  "skip_if": "You travel internationally, because the 3% foreign transaction fee will eat your rewards.",
+  "tags": ["cash-back", "no-annual-fee", "flat-rate"],
+  "apply_url": "https://www.citi.com/credit-cards/citi-double-cash-credit-card",
+  "apply_is_affiliate": true,
+  "rates_and_fees_url": null,
+  "verified_on": "2026-09-01",
+  "verified_by": "Jon Twaddle",
+  "source_url": "https://citi.com",
+  "offer_history": [
+    { "date": "2026-08-01", "headline": "$200 cash back on $1,500 spend" }
+  ],
+  "phone": "800-950-5114"
+}

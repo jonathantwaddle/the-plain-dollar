@@ -1,0 +1,35 @@
+{
+  "slug": "cit-bank",
+  "name": "CIT Bank Platinum Savings",
+  "brand": "CIT Bank",
+  "section": "save",
+  "category": "savings",
+  "price": { "headline": "Free to open", "upfront": null, "note": "No monthly maintenance fee. $100 minimum opening deposit." },
+  "key_facts": [
+    { "label": "APY (Annual Percentage Yield)", "value": "DRAFT: confirm current rate on issuer page" },
+    { "label": "Minimum to open", "value": "$100" },
+    { "label": "Monthly fee", "value": "None" },
+    { "label": "FDIC insured", "value": "Yes, up to $250,000" },
+    { "label": "Access", "value": "Online transfers; no physical branches or ATMs" }
+  ],
+  "pros": [
+    "Competitive APY among online savings accounts",
+    "No monthly fees",
+    "FDIC insured"
+  ],
+  "cons": [
+    "Online only; no branches or ATM access",
+    "Best APY requires higher balance tier"
+  ],
+  "best_for": ["people comfortable with online banking who want a competitive savings rate"],
+  "skip_if": "you need to deposit cash or access a branch",
+  "rating": 4.1,
+  "rating_reason": "CIT Bank consistently offers rates above the national average with no fees. The online-only model suits most savers but limits those who need branch access.",
+  "buy_url": "https://www.cit.com/cit-bank/banking/savings/",
+  "buy_is_affiliate": false,
+  "phone": "(855) 462-2652",
+  "hands_on": false,
+  "verified_on": "2026-08-15",
+  "verified_by": "research desk, awaiting Jon",
+  "source_url": "https://www.cit.com/cit-bank/banking/savings/"
+}

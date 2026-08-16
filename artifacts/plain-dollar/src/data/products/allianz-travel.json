@@ -1,0 +1,36 @@
+{
+  "slug": "allianz-travel",
+  "name": "Allianz Travel Insurance",
+  "brand": "Allianz Global Assistance",
+  "section": "protect",
+  "category": "travel-insurance",
+  "price": { "headline": "From 4% to 8% of trip cost", "upfront": null, "note": "Price depends on coverage level, trip cost, traveler age, and destination. Older travelers pay more." },
+  "key_facts": [
+    { "label": "Trip cancellation", "value": "Up to 100% of trip cost for covered reasons" },
+    { "label": "Medical coverage", "value": "Up to $50,000 (OneTrip Prime); higher on premium plans" },
+    { "label": "Medical evacuation", "value": "Up to $500,000" },
+    { "label": "Pre-existing conditions", "value": "Covered if purchased within 14 days of first trip deposit" },
+    { "label": "Cancel for any reason", "value": "Available as an upgrade (75% reimbursement)" }
+  ],
+  "pros": [
+    "Large, well-known provider with 24/7 assistance",
+    "Pre-existing condition waiver available if purchased early",
+    "Wide range of plans from basic to comprehensive"
+  ],
+  "cons": [
+    "Premiums increase significantly for travelers over 70",
+    "Cancel-for-any-reason costs extra and reimburses only 75%",
+    "Claims process can take several weeks"
+  ],
+  "best_for": ["travelers booking expensive trips who want protection against cancellation and medical emergencies"],
+  "skip_if": "your credit card already provides sufficient trip cancellation and medical coverage for your trip",
+  "rating": 4.0,
+  "rating_reason": "A reliable, established provider. Coverage is solid for standard needs. Price for older travelers can be steep. Worth comparing quotes for any specific trip.",
+  "buy_url": "https://www.allianztravelinsurance.com/",
+  "buy_is_affiliate": false,
+  "phone": "(866) 884-3556",
+  "hands_on": false,
+  "verified_on": "2026-08-15",
+  "verified_by": "research desk, awaiting Jon",
+  "source_url": "https://www.allianztravelinsurance.com/"
+}

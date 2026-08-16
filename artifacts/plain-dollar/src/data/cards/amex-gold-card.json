@@ -1,0 +1,44 @@
+{
+  "slug": "amex-gold-card",
+  "name": "American Express Gold Card",
+  "short_name": "Amex Gold",
+  "issuer": "American Express",
+  "network": "American Express",
+  "is_amex": true,
+  "annual_fee": 250,
+  "intro_offer": {
+    "headline": "60,000 Membership Rewards points",
+    "spend_requirement": "$6,000 in purchases in the first 6 months",
+    "expires": null,
+    "our_value_estimate": "$600 toward flights or hotel stays"
+  },
+  "rewards": [
+    { "rate": "4x", "on": "dining at restaurants worldwide" },
+    { "rate": "4x", "on": "groceries at US supermarkets, up to $25,000 a year, then 1x" },
+    { "rate": "3x", "on": "flights booked directly with airlines or on amextravel.com" },
+    { "rate": "2x", "on": "prepaid hotels and other eligible travel booked on amextravel.com" },
+    { "rate": "1x", "on": "everything else" }
+  ],
+  "regular_apr": "See Rates and Fees (Pay Over Time APR: 21.24% to 29.99% variable)",
+  "intro_apr": null,
+  "foreign_transaction_fee": "None",
+  "recommended_credit": "Good to excellent (670 to 850, FICO 8)",
+  "rating": 4.6,
+  "rating_reason": "4x at US supermarkets and 4x at restaurants makes this the strongest card for families who eat at home and go out regularly. The $120 dining credit and $120 Uber Cash bring the effective annual cost down to about $10, making it competitive even against no-fee cards for heavy grocery and dining spenders. Welcome offers vary — see terms.",
+  "best_for": [
+    "families spending $300 or more a month on groceries",
+    "people who eat out regularly and want to earn on both restaurants and supermarkets"
+  ],
+  "skip_if": "you spend less than $200 a month on groceries and dining combined; the Blue Cash Preferred will likely earn more for you",
+  "tags": ["groceries", "dining", "travel", "premium", "no-foreign-fee"],
+  "apply_url": "https://www.americanexpress.com/us/credit-cards/card/gold-card/",
+  "apply_is_affiliate": false,
+  "rates_and_fees_url": "https://www.americanexpress.com/us/credit-cards/card/gold-card/",
+  "verified_on": "2026-08-15",
+  "verified_by": "research desk, awaiting Jon",
+  "source_url": "https://www.americanexpress.com/us/credit-cards/card/gold-card/",
+  "offer_history": [
+    { "date": "2026-08-15", "headline": "60,000 points after $6,000 in 6 months" }
+  ],
+  "phone": "(800) 528-4800"
+}
